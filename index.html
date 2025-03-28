@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wadidaw</title>
 </head>
+
 <body>
+
+    <section class="mainheader" id="mainheader">
+
+        <div class="header" id="header">
+            <div class="logo">
+                <h1>BrandName</h1>
+            </div>
+            <div class="navBar">
+                <div class="navItems">
+                    <span>Home</span>
+                    <span>Product</span>
+                    <span>Pricing</span>
+                    <span>Contact</span>
+                </div>
+                <div class="LogJoin">
+                    <span>Login</span>
+                    <button class="buttonJoin">JOIN US <img src="assets/images/arrow.png" alt=""></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="banner" id="banner">
+            <div class="titleBanner">
+                <span>Join Us</span>
+                <h1>25K+ STUDENTS TRUST US</h1>
+                <p>Every day brings with it a fresh set of learning possibilities.</p>
+                <div class="joinLearn">
+                    <button class="buttonJoin">Join Us</button>
+                    <button class="buttonLearn">Learn More</button>
+                </div>
+            </div>
+            <div class="imageBanner">
+                <div>
+                    <img src="assets/images/hero-cover-1.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
     <div class="section">
         <div class="header"></div>
         <div class="title">
@@ -15,54 +59,304 @@
             <p>the two major realms of Classical physics: Newtonian mechanics</p>
         </div>
         <div class="img-class">
-            <a href="www.udemy.com"><img src="assets/col-md-2.png" class="pic1" ></a>
+            <a href="www.udemy.com"><img src="assets/col-md-2.png" class="pic1"></a>
             <img src="assets/col-md-4.png" class="pic2">
         </div>
     </div>
-    
+
+    <section class="ourPopularCourses">
+        <div class="content">
+            <div class="img" id="img">
+                <img src="assets/images/thumb-concept-16.png" alt="">
+            </div>
+            <div class="description">
+                <img src="assets/images/fixed-width fixed-height sec-.png" alt="">
+                <h1>Our Popular Courses</h1>
+                <p>Problems trying to resolve the conflict between
+                    the two major realms of Classical physics:
+                    Newtonian mechanics
+                </p>
+
+                <div class="learn">
+                    <span>Learn More </span>
+                    <img src="assets/images/icon arrow-next.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
 
 <style>
-    
-    .section{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        background-color: #26335D;
-        height: 859px;
-    }
-    .title{
-        text-align: center;
-        margin-bottom: 80px;
-    }
-    h3{
-        color: #8D5CF6;
-        align-items: center;
-        font-size: 23px;
-    }
-    h1{
-        color: #fff;
-        align-items: center;
-        font-size: 50px;
-    }
-    p{
-        color: #fff;
-        align-items: center;
-        font-size: 20px;
-    }
-    .img-class{
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-    .pic1:hover{
-        transform: scale(1.2);
-        cursor: pointer;
-    }
-    .pic2:hover{
-        transform: scale(1.2);
-        cursor: pointer;
+    body {
+        font-family: 'Montserrat', sans-serif;
+
+        margin: 0px;
+
+        h1,
+        p,
+        span {
+            margin: 0px;
+        }
+
+        .mainheader {
+            width: 100%;
+            height: 777px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #26335D;
+            color: #fff;
+            background-image: url(assets/images/hero-9-bg-shape-cover-dark.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            .header {
+                max-width: 1322px;
+                height: 91px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 41px;
+
+                .logo {
+                    h1 {
+                        font-size: 24px;
+                    }
+                }
+
+                .navBar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 240px;
+
+                    .navItems {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 21px;
+                        font-size: 14px;
+
+                        span:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    .LogJoin {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 45px;
+                        font-size: 14px;
+
+                        button.buttonJoin {
+                            background-color: #8D5CF6;
+                            border-radius: 5px;
+                            border: 1px solid #8D5CF6;
+                            color: #fff;
+                            padding: 15px 25px 15px 25px;
+
+                            transition: transform 1s;
+
+
+                            img {
+                                width: 12px;
+                                height: 10px;
+                                margin-left: 15px;
+                                position: relative;
+                                left: 0px;
+                            }
+                        }
+
+                        button.buttonJoin:hover {
+                            cursor: pointer;
+                            transform: scale(1.2);
+                        }
+
+                        span:hover {
+                            cursor: pointer;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            .banner {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 30px;
+
+                .titleBanner {
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    gap: 30px;
+
+                    margin-top: 148px;
+                    margin-bottom: 148px;
+                    margin-left: 132px;
+                    margin-right: 15px;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    h1 {
+                        font-size: 58px;
+                    }
+
+                    p {
+                        font-size: 20px;
+                    }
+
+                    .joinLearn {
+                        button.buttonJoin {
+                            background-color: #8D5CF6;
+                            border-radius: 5px;
+                            border: 1px solid #8D5CF6;
+                            color: #fff;
+                            padding: 15px 25px 15px 25px;
+
+                            transition: transform 1s;
+                        }
+
+                        button.buttonJoin:hover {
+                            cursor: pointer;
+                            transform: scale(1.09);
+                        }
+
+                        button.buttonLearn {
+                            background-color: transparent;
+                            border-radius: 5px;
+                            border: 1px solid #8D5CF6;
+                            color: #fff;
+                            padding: 15px 25px 15px 25px;
+
+                            background: linear-gradient(to left, transparent 50%, #8D5CF6 50%) right;
+                            background-size: 200%;
+                            transition: .5s ease-out;
+                        }
+
+                        button.buttonLearn:hover {
+                            cursor: pointer;
+                            background-position: left;
+                        }
+                    }
+                }
+
+                .imageBanner {
+                    img {
+                        height: 682px;
+                        width: 704px;
+                    }
+                }
+            }
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #26335D;
+            height: 859px;
+
+            .title {
+                text-align: center;
+                margin-bottom: 80px;
+            }
+
+            h3 {
+                color: #8D5CF6;
+                align-items: center;
+                font-size: 23px;
+            }
+
+            h1 {
+                color: #fff;
+                align-items: center;
+                font-size: 50px;
+            }
+
+            p {
+                color: #fff;
+                align-items: center;
+                font-size: 20px;
+            }
+
+            .img-class {
+                display: flex;
+                align-content: center;
+                justify-content: center;
+            }
+
+            .pic1:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+
+            .pic2:hover {
+                transform: scale(1.2);
+                cursor: pointer;
+            }
+        }
+
+        .ourPopularCourses {
+            background-color: #26335D;
+            margin: 0px;
+
+            .content {
+                width: 1440px;
+                height: 824px;
+                display: flex;
+                align-items: center;
+                gap: 108px;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 40px;
+                color: #FFFFFF;
+
+                p {
+                    font-size: 14px;
+                    width: 345px;
+                    padding-bottom: 35px;
+                }
+
+                h1 {
+                    width: 381px;
+                }
+
+                .learn {
+                    display: flex;
+                    /* align-content: center; */
+
+                }
+
+                .learn span {
+                    font-size: 14px;
+                    color: #8D5CF6;
+                    padding-right: 10px;
+                }
+
+                .learn:hover {
+                    /* transform: scale(1.5); */
+                    cursor: pointer;
+                    text-decoration: underline #8D5CF6;
+                    /* background-color: #FFFFFF; */
+
+                }
+
+            }
+        }
     }
 </style>
