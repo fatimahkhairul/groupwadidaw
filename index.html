@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wadidaw</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -84,6 +85,120 @@
             </div>
         </div>
     </section>
+
+    <!-- FORTH SECTION -->
+    <section class="cardSection">
+		<h5>Practice Advice</h5>
+		<h1>Approdable Packages</h1>
+		<p>Problems trying to resolve the conflict between <br> the two major realms of Classical physics: Newtonian
+			mechanics
+		</p>
+	</section>
+
+    <section class="cardContentSection">
+		<div class="cardContent">
+			<div class="cardStyle">
+				<div class="image-container">
+					<span class="sale-badge">Sale</span>
+					<div class="icon-buttons">
+						<button class="buttonlike"></button>
+						<button class="buttontrolley"></button>
+						<button class="buttonview"></button>
+					</div>
+					<img src="assets/product-cover-124 sec-.png" alt="Training Courses">
+				</div>
+				<div class="card-body">
+					<div class="top-row">
+						<div class="welcome-text">Welcome</div>
+						<div class="rating-badge">
+							<img src="assets/star.png" alt="Star" class="star-icon"> 4.9
+						</div>
+					</div>
+					<h2>Training Courses</h2>
+					<p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+					<p><img src="assets/sales.png" alt=""> </p>
+					<div class="price-section">
+						<span class="old-price">$16.48</span>
+						<span class="new-price">$6.48</span>
+					</div>
+					<button class="btn">Learn More <img src="assets/images/icon arrow-next.png" alt=""></button>
+				</div>
+			</div>
+
+			<div class="cardStyle">
+				<div class="image-container">
+					<span class="sale-badge">Sale</span>
+					<div class="icon-buttons">
+						<button class="buttonlike"></button>
+						<button class="buttontrolley"></button>
+						<button class="buttonview"></button>
+					</div>
+					<img src="assets/product-cover-125 sec-.png" alt="Training Courses">
+				</div>
+				<div class="card-body">
+					<div class="top-row">
+						<div class="welcome-text">Welcome</div>
+						<div class="rating-badge">
+							<img src="assets/star.png" alt="Star" class="star-icon"> 4.9
+						</div>
+					</div>
+					<h2>Lifetime access</h2>
+					<p>We focus on ergonomics and meeting you where you work. It's only a keystroke away.</p>
+					<p><img src="assets/sales.png" alt=""> </p>
+					<div class="price-section">
+						<span class="old-price">$16.48</span>
+						<span class="new-price">$6.48</span>
+					</div>
+					<button class="btn">Learn More <img src="assets/images/icon arrow-next.png" alt=""></button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <section class="testimonialSection">
+		<h5>Practice Advice</h5>
+		<h1>Most Popular Courses</h1>
+		<p>
+			Problems trying to resolve the conflict between <br>
+			the two major realms of Classical physics: Newtonian mechanics
+		</p>
+
+		<div class="testimonialCards">
+			<div class="testimonialCard">
+				<img src="assets/testimonial-user-cover-103.png" alt="User Photo" class="user-photo" />
+				<p>
+					Slate helps you see how many more days you need to work to <br> reach your financial <br> goal for the month
+					<br> and year.
+				</p>
+				<div class="star-rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star outlined-star"></i>
+				</div>
+				<h3>Regina Miles</h3>
+				<span>Designer</span>
+			</div>
+
+			<div class="testimonialCard">
+				<img src="assets/testimonial-user-cover-104.png" alt="User Photo" class="user-photo" />
+				<p>
+					Slate helps you see <br> how many more days <br> you need to work to <br> reach your financial <br> goal for
+					the month <br> and year.
+				</p>
+				<div class="star-rating">
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star"></i>
+					<i class="fa fa-star outlined-star"></i>
+				</div>
+				<h3>Regina Miles</h3>
+				<span>Designer</span>
+			</div>
+		</div>
+	</section>
 
 </body>
 
@@ -359,4 +474,303 @@
             }
         }
     }
+
+    body {
+			margin: 0;
+			font-family: 'Montserrat', sans-serif;
+			background-color: #26335D;
+		}
+
+        .cardSection {
+			text-align: center;
+			margin-top: 160px;
+		}
+
+        .cardSection h5 {
+			color: #8D5CF6;
+			margin: 0;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		.cardSection h1 {
+			color: white;
+			margin: 10px 0;
+			font-size: 40px;
+		}
+
+		.cardSection p {
+			color: white;
+			font-size: 14px;
+			font-weight: lighter;
+		}
+
+        .cardContentSection {
+			display: flex;
+			justify-content: center;
+			margin-top: 80px;
+			margin-bottom: 216px;
+		}
+
+        .cardContent {
+			display: flex;
+			gap: 20px;
+			max-width: 1200px;
+		}
+
+        .cardStyle {
+			width: calc(348px - 20px - 20px);
+			height: calc(622px - 20px - 20px);
+			background: white;
+			border-radius: 0px;
+			position: relative;
+		}
+
+		.image-container {
+			height: 300px;
+			position: relative;
+		}
+
+		.image-container img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.sale-badge {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			background: red;
+			color: white;
+			padding: 5px 10px;
+			font-size: 14px;
+			font-weight: bold;
+			border-radius: 3px;
+		}
+
+        .icon-buttons {
+			position: absolute;
+			top: 240px;
+			right: 82px;
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+		}
+
+		.icon-buttons button {
+			border: none;
+			border-radius: 50%;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+		}
+
+		.icon-buttons button :hover {
+			transform: scale(1.1);
+		}
+
+		.icon-buttons .buttonlike {
+			background-image: url(assets/like.png);
+
+		}
+
+		.icon-buttons .buttontrolley {
+			background-image: url(assets/basket.png);
+		}
+
+		.icon-buttons .buttonview {
+			background-image: url(assets/eye.png);
+		}
+
+		.icon-buttons button:hover {
+			transform: scale(1.2);
+		}
+
+        .card-body {
+			padding: 25px;
+			text-align: left;
+		}
+
+		.card-body span {
+			color: #8D5CF6;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		.card-body h2 {
+			margin: 10px 0;
+			font-size: 16px;
+			color: black;
+		}
+
+		.card-body p {
+			color: #737373;
+			font-size: 14px;
+			text-align: left;
+			margin: 10px 0;
+			width: 250px;
+		}
+
+		.top-row {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 6px;
+		}
+
+		.welcome-text {
+			color: #8A40FF;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		.rating-badge {
+			background-color: #26335D;
+			color: white;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 4px 10px;
+			border-radius: 999px;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		.star-icon {
+			width: 12px;
+			height: 12px;
+		}
+
+		.price-section {
+			margin: 10px 0;
+		}
+
+		.price-section span {
+			font-size: 16px;
+		}
+
+		.price-section .old-price {
+			color: #BDBDBD;
+			text-decoration: line-through;
+			margin-right: 5px;
+		}
+
+		.price-section .new-price {
+			color: orange;
+			font-weight: bold;
+		}
+
+		.btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 5px;
+			padding: 10px 20px;
+			border: 2px solid #8D5CF6;
+			border-radius: 25px;
+			background: white;
+			color: #8D5CF6;
+			font-weight: bold;
+			cursor: pointer;
+			margin-top: 15px;
+		}
+
+		.btn:hover {
+			transform: scale(1.1);
+			background-color: #8D5CF6;
+			color: white;
+			transition: all 0.3s ease;
+		}
+
+		.testimonialSection {
+			text-align: center;
+			color: white;
+			padding-bottom: 160px;
+           padding-top: 160px;
+
+		}
+
+		.testimonialSection h5 {
+			color: #8D5CF6;
+			font-size: 14px;
+			margin: 0;
+			font-weight: bold;
+		}
+
+		.testimonialSection h1 {
+			font-size: 40px;
+			margin: 10px 0;
+		}
+
+		.testimonialSection p {
+			font-size: 14px;
+			font-weight: lighter;
+		}
+
+		.testimonialCards {
+			display: flex;
+			justify-content: center;
+			gap: 15px;
+			margin-top: 96px;
+			flex-wrap: wrap;
+		}
+
+		.testimonialCard {
+			background-color: white;
+			color: black;
+			width:calc(501px - 25px - 25px - 35px - 35px);
+			padding: 25px 25px;
+			border-radius: 0px;
+			text-align: center;
+		}
+
+		.user-photo {
+			width: 128px;
+			height: 128px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-bottom: 20px;
+		}
+
+		.testimonialCard p {
+			font-size: 14px;
+			color: #4F4F4F;
+			margin-bottom: 15px;
+			padding: 0px 35px;
+		}
+
+		.star-rating {
+			margin: 15px 0px;
+		}
+
+		.testimonialCard h3 {
+			font-weight: bold;
+			font-size: 16px;
+			margin: 5px 0;
+		}
+
+		.testimonialCard span {
+			color: #737373;
+			font-size: 14px;
+		}
+
+		.testimonialCard .fa-star {
+			font-size: 20px;
+			margin: 0 2px;
+			color: #F3CD03;
+		}
+
+		.testimonialCard .outlined-star {
+			color: white;
+			-webkit-text-stroke: 1px #F3CD03;
+		}
+
+		.testimonialCards :hover {
+			transform: scale(1.1);
+			background-color: #BDBDBD;
+		}
 </style>
