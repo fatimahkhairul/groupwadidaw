@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+    <title>Training Day 3</title>
 </head>
 
 <style>
@@ -18,11 +21,18 @@
     body {
         background-color: #26335D;
         margin: 0px;
+        font-family: "Montserrat", sans-serif;
+    }
 
+    section {
+        max-width: 100vw;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
 
     .content {
-        width: 1440px;
+        width: 1050px;
         height: 824px;
         display: flex;
         align-items: center;
@@ -31,18 +41,32 @@
         justify-content: center;
         font-size: 40px;
         color: #FFFFFF;
+    }
 
+    .description {
+        width: 381px;
+        gap: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
 
+    .description img {
+        object-fit: scale-down;
+        /* align-self: flex-start; */
     }
 
     p {
         font-size: 14px;
-        width: 345px;
-        padding-bottom: 35px;
+        color: #FFFFFF;
+        margin: 0;
     }
 
     h1 {
-        width: 381px;
+        color: #FFFFFF;
+        font-size: 40px;
+        margin: 0;
     }
 
     .learn {
@@ -61,6 +85,12 @@
         /* transform: scale(1.5); */
         cursor: pointer;
         /* background-color: #FFFFFF; */
+
+    }
+
+    h3 {
+        color: #8D5CF6;
+        margin: 0;
 
     }
 </style>
@@ -88,6 +118,79 @@
         </div>
     </section>
 
+    <style>
+        .newsletter {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            padding: 160px 0;
+            gap: 80px;
+        }
+
+        .title {
+            /* max-width: 692px; */
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            gap: 10px;
+
+        }
+
+        .title h3 {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .title h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .subscribe {
+            border-radius: 5px;
+            border: 1px solid #E6E6E6;
+            display: flex;
+
+        }
+
+        .subscribe input {
+            height: 58px;
+            padding: 0 20px;
+            border: none;
+            justify-content: flex-start;
+            display: flex;
+            align-items: center;
+        }
+
+        .subscribe input.button {
+            background-color: #8D5CF6;
+            color: #FFFFFF;
+            width: 117px;
+            padding: 0;
+        }
+
+        .subscribe input.email {
+            width: 571px;
+        }
+    </style>
+
+    <section class="newsletter">
+        <div class="title">
+            <h3>Newsletter</h3>
+            <h1>Get Quality Education</h1>
+            <p>Problems trying to resolve the conflict between <br>
+                the two major realms of Classical physics: Newtonian mechanics </p>
+        </div>
+
+        <form class="subscribe" action="">
+            <input class="email" type="text" name="email" id="email" placeholder="Your Email">
+            <!-- <button id="subscribe">Subscribe</button> -->
+            <input class="button" type="submit" value="Subscribe">
+        </form>
+
+    </section>
 
 </body>
 
