@@ -194,12 +194,28 @@
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
-					<i class="fa fa-star outlined-star"></i>                                 
+					<i class="fa fa-star outlined-star"></i>
 				</div>
 				<h3>Regina Miles</h3>
 				<span>Designer</span>
 			</div>
 		</div>
+	</section>
+
+	<section class="newsletter">
+		<div class="title">
+			<h3>Newsletter</h3>
+			<h1>Get Quality Education</h1>
+			<p>Problems trying to resolve the conflict between <br>
+				the two major realms of Classical physics: Newtonian mechanics </p>
+		</div>
+
+		<form class="subscribe" action="">
+			<input class="email" type="text" name="email" id="email" placeholder="Your Email">
+			<!-- <button id="subscribe">Subscribe</button> -->
+			<input class="button" type="submit" value="Subscribe">
+		</form>
+
 	</section>
 
 	<section class="footerTop">
@@ -535,6 +551,70 @@
 
 			}
 		}
+
+		.newsletter {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			flex-direction: column;
+			padding: 160px 0;
+			gap: 80px;
+		}
+
+		.title {
+			/* max-width: 692px; */
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			gap: 10px;
+
+		}
+
+		.title h3 {
+			font-size: 14px;
+			font-weight: bold;
+			color: #8D5CF6;
+		}
+
+		.title h1 {
+			font-size: 40px;
+			font-weight: bold;
+			color: #FFFFFF;
+		}
+
+		.title p{
+			color: #FFFFFF;
+		}
+
+		.subscribe {
+			border-radius: 5px;
+			border: 1px solid #E6E6E6;
+			display: flex;
+
+		}
+
+		.subscribe input {
+			height: 58px;
+			padding: 0 20px;
+			border: none;
+			justify-content: flex-start;
+			display: flex;
+			align-items: center;
+		}
+
+		.subscribe input.button {
+			background-color: #8D5CF6;
+			color: #FFFFFF;
+			width: 117px;
+			padding: 0;
+		}
+
+		.subscribe input.email {
+			width: 571px;
+		}
+
+
 	}
 
 	body {
@@ -957,7 +1037,7 @@
 			text-align: center;
 			color: white;
 			padding-bottom: 160px;
-           padding-top: 160px;
+			padding-top: 160px;
 
 		}
 
@@ -988,7 +1068,7 @@
 		.testimonialCard {
 			background-color: white;
 			color: black;
-			width:calc(501px - 25px - 25px - 35px - 35px);
+			width: calc(501px - 25px - 25px - 35px - 35px);
 			padding: 25px 25px;
 			border-radius: 0px;
 			text-align: center;
@@ -1030,7 +1110,7 @@
 			color: #F3CD03;
 		}
 
-        .testimonialCard .outlined-star {
+		.testimonialCard .outlined-star {
 			color: white;
 			-webkit-text-stroke: 1px #F3CD03;
 		}
@@ -1039,5 +1119,7 @@
 			transform: scale(1.1);
 			background-color: #BDBDBD;
 		}
+
+
 	}
 </style>
