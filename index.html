@@ -194,7 +194,7 @@
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
 					<i class="fa fa-star"></i>
-					<i class="fa fa-star outlined-star"></i>
+					<i class="fa fa-star outlined-star"></i>                                 
 				</div>
 				<h3>Regina Miles</h3>
 				<span>Designer</span>
@@ -489,6 +489,8 @@
 		.ourPopularCourses {
 			background-color: #26335D;
 			margin: 0px;
+			display: flex;
+			justify-content: center;
 
 			.content {
 				width: 1440px;
@@ -882,7 +884,160 @@
 			max-width: 1322px;
 			display: flex;
 			justify-content: space-between;
-			gap: 213px
+			gap: 213px;
+			align-items: center;
+			margin-bottom: 6px;
+		}
+
+		.welcome-text {
+			color: #8A40FF;
+			font-weight: bold;
+			font-size: 14px;
+		}
+
+		.rating-badge {
+			background-color: #26335D;
+			color: white;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 4px 10px;
+			border-radius: 999px;
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		.star-icon {
+			width: 12px;
+			height: 12px;
+		}
+
+		.price-section {
+			margin: 10px 0;
+		}
+
+		.price-section span {
+			font-size: 16px;
+		}
+
+		.price-section .old-price {
+			color: #BDBDBD;
+			text-decoration: line-through;
+			margin-right: 5px;
+		}
+
+		.price-section .new-price {
+			color: orange;
+			font-weight: bold;
+		}
+
+		.btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 5px;
+			padding: 10px 20px;
+			border: 2px solid #8D5CF6;
+			border-radius: 25px;
+			background: white;
+			color: #8D5CF6;
+			font-weight: bold;
+			cursor: pointer;
+			margin-top: 15px;
+		}
+
+		.btn:hover {
+			transform: scale(1.1);
+			background-color: #8D5CF6;
+			color: white;
+			transition: all 0.3s ease;
+		}
+
+		.testimonialSection {
+			text-align: center;
+			color: white;
+			padding-bottom: 160px;
+           padding-top: 160px;
+
+		}
+
+		.testimonialSection h5 {
+			color: #8D5CF6;
+			font-size: 14px;
+			margin: 0;
+			font-weight: bold;
+		}
+
+		.testimonialSection h1 {
+			font-size: 40px;
+			margin: 10px 0;
+		}
+
+		.testimonialSection p {
+			font-size: 14px;
+		}
+
+		.testimonialCards {
+			display: flex;
+			justify-content: center;
+			gap: 15px;
+			margin-top: 96px;
+			flex-wrap: wrap;
+		}
+
+		.testimonialCard {
+			background-color: white;
+			color: black;
+			width:calc(501px - 25px - 25px - 35px - 35px);
+			padding: 25px 25px;
+			border-radius: 0px;
+			text-align: center;
+		}
+
+		.user-photo {
+			width: 128px;
+			height: 128px;
+			border-radius: 50%;
+			object-fit: cover;
+			margin-bottom: 20px;
+		}
+
+		.testimonialCard p {
+			font-size: 14px;
+			color: #737373;
+			margin-bottom: 15px;
+			padding: 0px 35px;
+		}
+
+		.star-rating {
+			margin: 15px 0px;
+		}
+
+		.testimonialCard h3 {
+			font-weight: bold;
+			font-size: 16px;
+			margin: 5px 0;
+		}
+
+		.testimonialCard span {
+			color: #737373;
+			font-size: 14px;
+		}
+
+		.testimonialCard .fa-star {
+			font-size: 20px;
+			margin: 0 2px;
+			color: #F3CD03;
+		}
+
+        .testimonialCard .outlined-star {
+			color: white;
+			-webkit-text-stroke: 1px #F3CD03;
+		}
+
+		.testimonialCards :hover {
+			transform: scale(1.1);
+			background-color: #BDBDBD;
 		}
 	}
 </style>
